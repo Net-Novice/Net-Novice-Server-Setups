@@ -64,22 +64,22 @@ services:
 
 - Initial setup script:
   ```bash
-  wget https://gitlab.com/net-novice1/net-novice-server-docs/-/raw/main/NNBPSSS.sh && sudo bash NNBPSSS.sh
+  wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/NNBPSSS.sh && sudo bash NNBPSSS.sh
   ````
   
 - Prometheus Setup Scrip
   ````bash
-  wget https://gitlab.com/net-novice1/net-novice-server-docs/-/raw/main/NNPSS.sh && sudo bash NNBTSSS.sh
+  wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/NNPSS.sh && sudo bash NNBTSSS.sh
   ````
   
 - K3S
   ```bash
-  wget https://gitlab.com/net-novice1/net-novice-server-docs/-/raw/main/NNK3SSS.sh && sudo bash NNK3SSS.sh
+  wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/NNK3SSS.sh && sudo bash NNK3SSS.sh
   ````
 ## Test Servers
 - Initial setup script:
   ````bash
-  wget https://gitlab.com/net-novice1/net-novice-server-docs/-/raw/main/NNBTSSS.sh && sudo bash NNBTSSS.sh
+  wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/NNBTSSS.sh && sudo bash NNBTSSS.sh
 
   ````
 
