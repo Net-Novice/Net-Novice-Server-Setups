@@ -6,8 +6,12 @@
     - Prometheus installer: [prometheus-installer.sh](https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/prometheus-installer.sh)
     - Node Exporter installer: [node-exporter-installer.sh](https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/node-exporter-installer.sh)
   
-    - ```bash wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/prometheus-installer.sh ```
-    - ```bash wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/node-exporter-installer.sh ```
+    - ```bash
+      wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/prometheus-installer.sh
+      ```
+    - ```bash
+      wget https://raw.githubusercontent.com/Net-Novice/Net-Novice-Server-Setups/main/node-exporter-installer.sh
+       ```
 
 2. **Make the scripts executable**:
     ```bash
