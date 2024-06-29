@@ -23,12 +23,63 @@ sudo apt-get install -y wget tar nano
     chmod +x premetheus-installer-arm.sh
     chmod +x node-exporter-installer-arm.sh
     ```
-## Run the script
+    ## Run the script:
 
     ```bash
-    sudo ./prometheus-installer-arm.sh
+    sudo ./premetheus-installer-arm.sh
+    ```
+    ```service
+    [Unit]
+    Description=Prometheus
+    Wants=network-online.target
+    After=network-online.target
+    
+    StartLimitIntervalSec=500
+    StartLimitBurst=5
+    
+    [Service]
+    User=prometheus
+    Group=prometheus
+    Type=simple
+    Restart=on-failure
+    RestartSec=5s
+    ExecStart=/usr/local/bin/prometheus \
+      --config.file=/etc/prometheus/prometheus.yml \
+      --storage.tsdb.path=/data \
+      --web.console.templates=/etc/prometheus/consoles \
+      --web.console.libraries=/etc/prometheus/console_libraries \
+      --web.listen-address=0.0.0.0:9090 \
+      --web.enable-lifecycle
+    
+    [Install]
+    WantedBy=multi-user.target
     ```
 
+    ```bash
+    sudo ./node-exporter-installer-arm.sh
+    ```
+
+    ```service
+    [Unit]
+    Description=Node Exporter
+    Wants=network-online.target
+    After=network-online.target
+    
+    StartLimitIntervalSec=500
+    StartLimitBurst=5
+    
+    [Service]
+    User=node_exporter
+    Group=node_exporter
+    Type=simple
+    Restart=on-failure
+    RestartSec=5s
+    ExecStart=/usr/local/bin/node_exporter \
+        --collector.logind
+    
+    [Install]
+    WantedBy=multi-user.target
+    ```
 ## Configure Prometheus to Scrape Node Exporter
 
 1. **Edit the Prometheus configuration file**:
