@@ -20,8 +20,8 @@ sudo apt-get install -y wget tar nano
        ```
 2. **Make the scripts executable**:
     ```bash
-    chmod +x prometheus-installer.sh
-    chmod +x node-exporter-installer.sh
+    chmod +x premetheus-installer-arm.sh
+    chmod +x node-exporter-installer-arm.sh
     ```
 
 ## Prometheus Setup Script
