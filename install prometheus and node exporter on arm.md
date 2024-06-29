@@ -23,6 +23,11 @@ sudo apt-get install -y wget tar nano
     chmod +x premetheus-installer-arm.sh
     chmod +x node-exporter-installer-arm.sh
     ```
+## Run the script
+
+    ```bash
+    sudo ./prometheus-installer-arm.sh
+    ```
 
 ## Configure Prometheus to Scrape Node Exporter
 
