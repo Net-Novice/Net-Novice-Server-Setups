@@ -1,6 +1,3 @@
-Sure, here is the markdown file containing the detailed instructions for setting up Prometheus and Node Exporter on a Raspberry Pi:
-
-```markdown
 # Setup Instructions for Prometheus and Node Exporter on Raspberry Pi
 
 ## Prerequisites
@@ -10,7 +7,6 @@ Ensure you have the necessary tools installed on your Raspberry Pi:
 sudo apt-get update
 sudo apt-get install -y wget tar nano
 ```
-
 ## Download and Run Setup Scripts
 
 1. **Download the setup scripts**:
